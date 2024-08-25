@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "blockcrossing",
+	"version": "${version}",
+	"name": "Block Crossing",
+	"description": "A Minecraft Mod inspired by Nintendo's Animal Crossing Franchise.",
+	"authors": [
+		"Keith__"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/blockcrossing/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.atomickeith.blockcrossing.BlockCrossing"
+		],
+		"fabric-datagen": [
+			"net.atomickeith.blockcrossing.BlockCrossingDataGenerator"
+		],
+		"client": [
+			"net.atomickeith.blockcrossing.BlockCrossingModClient"
+		]
+	},
+	"mixins": [
+		"blockcrossing.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.2",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"sodium": ">=0.5.11"
+	}
+}
